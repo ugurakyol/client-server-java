@@ -1,12 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="SetConfiguration">
-  <grid id="27dc6" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-    <margin top="0" left="0" bottom="0" right="0"/>
+  <grid id="27dc6" binding="MainPanel" layout-manager="GridLayoutManager" row-count="6" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="30" left="120" bottom="30" right="120"/>
     <constraints>
       <xy x="20" y="20" width="500" height="400"/>
     </constraints>
-    <properties/>
+    <properties>
+      <minimumSize width="-1" height="-1"/>
+      <opaque value="false"/>
+      <preferredSize width="300" height="360"/>
+    </properties>
     <border type="none"/>
-    <children/>
+    <children>
+      <grid id="d94ce" binding="FormPanel" layout-manager="GridLayoutManager" row-count="6" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="20" left="40" bottom="20" right="40"/>
+        <constraints>
+          <grid row="0" column="0" row-span="6" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="300" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-7303024"/>
+          <opaque value="true"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="f7cc3" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <opaque value="false"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="554dd" class="javax.swing.JButton" binding="STARTSERVERButton" default-binding="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="200" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font name="Ubuntu" size="16" style="0"/>
+                  <text value="START SERVER"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="426ec" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <opaque value="false"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="bf165" class="javax.swing.JTextField" binding="USERNANETextField" default-binding="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="200" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font name="Ubuntu" size="18" style="2"/>
+                  <text value="USER NANE"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="2d67c" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="20"/>
+              <opaque value="false"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="4a074" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="-1" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font name="Ubuntu" size="18" style="1"/>
+                  <requestFocusEnabled value="false"/>
+                  <text value="OR"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="8f90" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <opaque value="false"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="5f581" class="javax.swing.JButton" binding="CONNECTTOSERVERButton" default-binding="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="200" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font name="Ubuntu" size="16" style="0"/>
+                  <text value="CONNECT TO SERVER"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="ded53" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <opaque value="false"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="ae968" class="javax.swing.JTextField" binding="PORTTextField" default-binding="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="200" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font name="Ubuntu" size="18" style="2"/>
+                  <text value="PORT"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="ee0e0" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <opaque value="false"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="6e7b2" class="javax.swing.JTextField" binding="IPADDRESSTextField" default-binding="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="200" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font name="Ubuntu" size="18" style="2"/>
+                  <text value="IP ADDRESS"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
   </grid>
 </form>
