@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class SetConfiguration extends JFrame {
 
@@ -13,6 +15,20 @@ public class SetConfiguration extends JFrame {
 
     public SetConfiguration(){
         initComponents();
+        STARTSERVERButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                JOptionPane.showMessageDialog(null,"Server is started successfully","Server status",JOptionPane.INFORMATION_MESSAGE);
+            }
+        });
+        CONNECTTOSERVERButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+
+                JOptionPane.showMessageDialog(null,"Client is connected to server successfully","Client status",JOptionPane.INFORMATION_MESSAGE);
+
+            }
+        });
     }
 
     public void initComponents() {
